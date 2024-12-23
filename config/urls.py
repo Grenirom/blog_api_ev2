@@ -8,7 +8,7 @@ urlpatterns = [
     path('api/account/', include('account.urls')),
     path('api/category/', include('category.urls')),
     path('api/post/', include('post.urls')),
-    # path('api/comments/', include('comments.urls'))
+    path('api/comments/', include('comments.urls'))
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

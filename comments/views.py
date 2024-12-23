@@ -21,7 +21,7 @@ class CommentViewSet(ModelViewSet):
     
     def get_permissions(self):
         if self.request.method in ['POST', 'PUT', 'DELETE']:
-            return [permissions.IsAdminUser(), IsOwner()]
+            return [permissions.IsAuthenticated(), IsOwner()]
         return [permissions.AllowAny()]
     
     def perform_create(self, serializer):
