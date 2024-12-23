@@ -3,8 +3,6 @@ venv/
 __pycache__/
 *.py[cod]
 *$py.class
-*/migrations/*.py
-*/migrations/*.pyc
 .vscode/
 .idea/
 .DS_Store
